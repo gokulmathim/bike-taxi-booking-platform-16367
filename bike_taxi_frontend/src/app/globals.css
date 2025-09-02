@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #1A73E8; /* primary */
+  --color-secondary: #34A853; /* secondary */
+  --color-accent: #FFB300; /* accent */
+  --color-bg: #ffffff;
+  --color-fg: #0f172a;
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* semantic utility classes mapped to CSS vars (for consistency across components) */
+.bg-bg { background-color: var(--color-bg); }
+.text-fg { color: var(--color-fg); }
+.text-muted { color: var(--color-muted); }
+.border-border { border-color: var(--color-border); }
+.bg-muted { background-color: #f9fafb; }
+.text-primary { color: var(--color-primary); }
+.bg-primary { background-color: var(--color-primary); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-accent { background-color: var(--color-accent); }
